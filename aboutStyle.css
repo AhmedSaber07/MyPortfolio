@@ -1,0 +1,60 @@
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+a{
+    text-decoration: none;
+  }
+.brand{
+    font-weight: 900;
+    font-size: 24px;
+}
+.canva-list:hover{
+    background-color:#d5c455;
+    color:white;
+    cursor: pointer;
+  }
+.price{
+    font-size: 45px;
+    font-weight: 700;
+    color: #d5c455;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+}
+}
+.left-side{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.skill-side{
+    animation: 1s ease-out 2s 1 slideInFromLeft;
+    animation-fill-mode: backwards;
+}
+.skill-contain{
+    animation: 1s ease-out 3s 1 slideInFromLeft;
+    animation-fill-mode: backwards;
+}
+
+@media screen and (max-width:767px) {
+    nav{
+        background-color: #4c4e50!important;
+    }
+    .brand{
+        color:white;
+    }
+}

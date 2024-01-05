@@ -1,0 +1,81 @@
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+a{
+    text-decoration: none;
+  }
+.brand{
+    font-weight: 900;
+    font-size: 24px;
+}
+.canva-list:hover{
+    background-color:#d5c455;
+    color:white;
+    cursor: pointer;
+  }
+h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+h1{
+    font-weight: 600;
+    color: #222222;
+    font-size: 40px;
+}
+.par{
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+}
+.icon{
+    color:#d5c455;
+}
+.service-contain:hover{
+    background-color: #d5c455;
+    color: white ;
+    &
+    .par{
+        color:white;
+    }
+    &
+    .icon{
+        color:white;
+    }
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+}
+}
+.top-service{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.bottom-service{
+    animation: 1s ease-out 1s 1 slideInFromLeft;
+    animation-fill-mode: backwards;
+}
+@media screen and (max-width:767px) {
+    nav{
+        background-color: #4c4e50!important;
+    }
+    .brand{
+        color:white;
+    }
+}

@@ -1,0 +1,71 @@
+body{
+    font-family: "Poppins", Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+  }
+.brand{
+    font-weight: 900;
+    font-size: 24px;
+}
+.canva-list:hover{
+    background-color:#d5c455;
+    color:white;
+    cursor: pointer;
+  }
+.experience-icon{
+    transform: translate(40px,-39px)!important;
+    transition: auto!important;
+background-color: #d5c455;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+}
+}
+.contain-exper1{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.contain-exper2{
+    animation: 1s ease-out 1s 1 slideInFromLeft;
+    animation-fill-mode: backwards;
+}
+.contain-exper3{
+    animation: 1s ease-out 2s 1 slideInFromLeft;
+    animation-fill-mode: backwards;
+}
+.contain-exper4{
+    animation: 1s ease-out 3s 1 slideInFromLeft;
+    animation-fill-mode: backwards;
+}
+.contain-exper5{
+    animation: 1s ease-out 4s 1 slideInFromLeft;
+    animation-fill-mode: backwards;
+}
+.contain-exper6{
+    animation: 1s ease-out 5s 1 slideInFromLeft;
+    animation-fill-mode: backwards;
+}
+@media screen and (max-width:767px) {
+    nav{
+        background-color: #4c4e50!important;
+    }
+    .brand{
+        color:white;
+    }
+}

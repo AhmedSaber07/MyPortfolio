@@ -1,0 +1,159 @@
+body{
+    font-family: "Poppins", Arial, sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.jobTitle{
+    text-transform: uppercase;
+    color: #d5c455;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+/* @keyframes typing {
+    from { width: 0 }
+    to { width:100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+  .typing {
+    overflow: hidden;
+    border-right: .4em solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:typing 3.5s steps(40,end) infinite,    blink-caret .75s step-end infinite;
+    -webkit-animation:typing 3.5s steps(40,end) infinite,    blink-caret .75s step-end infinite;
+}
+  .me{
+    font-weight: 700;
+    color: #222222;
+    font-size: 4em;
+    line-height: 1.2;
+} */
+
+  
+  .contain h1:nth-child(1) {
+    font-family: 'Fira Code', monospace;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0 0 0 35%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 170px;
+    animation: type 2s steps(40,end) forwards;
+    -webkit-animation: type 2s steps(40,end) forwards;
+}
+  
+  .contain h1:nth-child(2) {
+    opacity: 0;
+    font-family: "Work Sans", sans-serif;
+    margin: 0 auto auto auto;
+    background: black;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 100px;
+    width: 430px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+    -webkit-animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+  
+  @keyframes shring-animation {
+    0% {
+      background-position: 0 0;
+      opacity: 0;
+      width: 0;
+    }
+    1% {
+      background-position: 0 0;
+      opacity: 1;
+      border-right: 1px solid black;
+    }
+    50% {
+      background-position: 150px 0;
+      opacity: 1;
+      border-right: 1px solid black;
+    }
+    100% {
+      background-position: 400px 0;
+      opacity: 1;
+      border-right: 1px solid black;
+    }
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    1%, 99%{
+      border-right: 1px solid black;
+    }
+    100%{
+      border-right: none;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+.brand{
+    font-weight: 900;
+    font-size: 24px;
+}
+.left-section{
+    background-color: #f8f8f8;
+
+}
+.slide {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+    -webkit-transition: height .4s ease;
+    -moz-transition: height .4s ease;
+    -ms-transition: height .4s ease;
+    -o-transition: height .4s ease;
+}
+
+.canva-list:hover{
+  background-color:#d5c455;
+  color:white;
+  cursor: pointer;
+}
+  
+  .slide li {padding : 30px;}
+  #touch {position: absolute; opacity: 0; height: 0px;}   
+  #touch:checked + .slide {height: 300px;} 
+@media screen and (max-width:767px) {
+    nav{
+        background-color: #4c4e50!important;
+    }
+    .brand{
+        color:white;
+    }
+    .left-section{
+        /* background-color: #f8f8f8; */
+        background-image: url('./images/picture2-removebg-preview.png');
+        background-repeat: no-repeat;
+        display: flex;
+        background-size: contain;
+        
+    }
+}
+
+/*experience*/
+
